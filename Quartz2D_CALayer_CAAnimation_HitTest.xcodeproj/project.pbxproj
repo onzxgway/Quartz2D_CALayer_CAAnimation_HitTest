@@ -877,7 +877,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/san_xu/Desktop/quatz2D/Quartz2D复习/Quartz2D_CALayer_CAAnimation_HitTest/Quartz2D_CALayer_CAAnimation_HitTest/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = Quartz2D_CALayer_CAAnimation_HitTest/PrefixHeader.pch;
 				INFOPLIST_FILE = Quartz2D_CALayer_CAAnimation_HitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zxg.Quartz2D-CALayer-CAAnimation-HitTest";
@@ -890,7 +890,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/san_xu/Desktop/quatz2D/Quartz2D复习/Quartz2D_CALayer_CAAnimation_HitTest/Quartz2D_CALayer_CAAnimation_HitTest/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = Quartz2D_CALayer_CAAnimation_HitTest/PrefixHeader.pch;
 				INFOPLIST_FILE = Quartz2D_CALayer_CAAnimation_HitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zxg.Quartz2D-CALayer-CAAnimation-HitTest";
