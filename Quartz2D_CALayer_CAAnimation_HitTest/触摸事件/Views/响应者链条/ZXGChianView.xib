@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZXGChianView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Mo-2v-WdN" customClass="ChianViewC">
+                    <rect key="frame" x="54" y="234" width="268" height="273"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejA-fH-sPs" customClass="ChianViewD">
+                            <rect key="frame" x="30" y="30" width="191" height="92"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hT-Oj-J9z" customClass="ChianViewE">
+                            <rect key="frame" x="30" y="153" width="191" height="92"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxR-dj-Eps" customClass="ChianViewB">
+                    <rect key="frame" x="53" y="42" width="268" height="144"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="268" id="FhL-IA-G0W"/>
+                        <constraint firstAttribute="height" constant="144" id="meI-dZ-gkI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Mo-2v-WdN" secondAttribute="bottom" constant="160" id="5Rr-FR-gXt"/>
+                <constraint firstItem="VxR-dj-Eps" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BcK-k1-Puf"/>
+                <constraint firstItem="8Mo-2v-WdN" firstAttribute="width" secondItem="VxR-dj-Eps" secondAttribute="width" id="D5K-hq-pKG"/>
+                <constraint firstItem="VxR-dj-Eps" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="cGV-Dh-Bqx"/>
+                <constraint firstItem="8Mo-2v-WdN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l1A-4M-ynb"/>
+                <constraint firstItem="8Mo-2v-WdN" firstAttribute="top" secondItem="VxR-dj-Eps" secondAttribute="bottom" constant="48" id="ohq-Wq-EnP"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

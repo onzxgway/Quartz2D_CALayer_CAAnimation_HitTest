@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  Quartz2D_CALayer_CAAnimation_HitTest
+//
+//  Created by san_xu on 2017/4/17.
+//  Copyright © 2017年 com.zxg. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define ZXGPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+#endif /* PrefixHeader_pch */

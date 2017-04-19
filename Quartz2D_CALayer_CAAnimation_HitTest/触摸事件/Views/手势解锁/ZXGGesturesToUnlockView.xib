@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZXGGesturesToUnlockView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="DuK-1q-lKx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-ad-l6v" customClass="ZXGGestureView">
+                    <rect key="frame" x="10" y="140" width="355" height="355"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="E2q-ad-l6v" secondAttribute="height" multiplier="1:1" id="CP9-tk-plW"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cxQ-bR-HlT">
+                    <rect key="frame" x="147" y="30" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="GAN-OF-JXh"/>
+                        <constraint firstAttribute="width" secondItem="cxQ-bR-HlT" secondAttribute="height" multiplier="1:1" id="f3Q-DS-I9N"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="E2q-ad-l6v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="8Rg-7L-2al"/>
+                <constraint firstItem="DuK-1q-lKx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MQf-4W-5ed"/>
+                <constraint firstAttribute="bottom" secondItem="DuK-1q-lKx" secondAttribute="bottom" id="PnT-bw-XbX"/>
+                <constraint firstItem="DuK-1q-lKx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UcW-Zg-c1i"/>
+                <constraint firstAttribute="trailing" secondItem="E2q-ad-l6v" secondAttribute="trailing" constant="10" id="X0x-mw-18v"/>
+                <constraint firstItem="cxQ-bR-HlT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e8b-54-vZI"/>
+                <constraint firstAttribute="trailing" secondItem="DuK-1q-lKx" secondAttribute="trailing" id="fgF-WB-NPS"/>
+                <constraint firstItem="E2q-ad-l6v" firstAttribute="top" secondItem="cxQ-bR-HlT" secondAttribute="bottom" constant="30" id="tXG-4H-SoX"/>
+                <constraint firstItem="cxQ-bR-HlT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="yx2-8f-76s"/>
+            </constraints>
+            <connections>
+                <outlet property="myGestureView" destination="E2q-ad-l6v" id="HP5-cV-Jlu"/>
+                <outlet property="topIndicateImage" destination="cxQ-bR-HlT" id="S76-3M-uvD"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Home_refresh_bg.png" width="640" height="1008"/>
+    </resources>
+</document>
